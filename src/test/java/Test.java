@@ -9,13 +9,11 @@ import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
 public class Test {
-    @Managed
+    @Managed(driver = "chrome")
     WebDriver driver;
 
     @Steps
     public BasicSteps basicSteps;
-
-
 
     @org.junit.Test
     public void userLogin() {
